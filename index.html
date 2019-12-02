@@ -1,73 +1,125 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign Up Form</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
+<html lang="en">
 
-      <form action="index.html" method="host">
-      
-        <h1>sign up</h1>
-        <fieldset>
-          <legend><span class="number">1</span>Your Basic Info</legend>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name">
-        
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" name="user_email">
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="user_password">
-          
-          <label>Age:</label>
-          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
-          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or Older</label>
-        </fieldset>
-        
-        <fieldset>
-          <legend><span class="number">2</span>Your Profile</legend>
-          <label for="bio">Biography:</label>
-        <textarea id="bio" name="user_bio"></textarea>
-        
-          <label for="job">Job role:</label>
-          <select id="job" name="user_job">
-            
-            <optgroup label="Web">
-          <option value="frontend_developer">Front-End Developer</option>
-            <option value="php_developer">PHP Developer</option>
-            <option value="python_developer">Python Developer</option>
-            <option value="rails_developer">Rails Developer</option>
-            <option value="web_designer">Front-End Developer</option>
-            <option value="wordpress_developer">Wordpress Developer</option>
-            </optgroup>
-            
-            <optgroup label="Mobile">
-              <option value="android_developer">Android Developer</option>
-            <option value="ios_developer">IOS Developer</option>
-          <option value="mobile_designerr">Mobile Designer</option>
-          </optgroup>
-            
-              <optgroup label="Business">
-          <option value="business_owner">Business Owner</option>
-          <option value="freelancer">Freelancer</option>
-          </optgroup>
-            </select>
-          
-          <label>Interests:</label>
-          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
-          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="dsignt">Design</label><br>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
-          
-          
-        </fieldset>
-        
-        <button type="submit">sign up</button>
-      </form>
-      
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subscribe to our Newsletter!</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>The Code Review</h1>
+    </header>
+
+    <div class="form">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+
+        <form action="index.html" method="post">
+
+            <fieldset id="user-bio">
+
+                <legend id="Contact">Contact Information</legend>
+
+                <div class="flex">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user_name" placeholder="Required" required>
+                </div>
+
+                <div class="flex">
+                    <label for="mail">Email Address</label>
+                    <input type="email" id="mail" name="user_email" placeholder="Required" required>
+                </div>
+
+                <div class="flex">
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" id="tel" name="user_tel" placeholder="Required" required>
+                </div>
+
+                <div class="flex">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user_address">
+                </div>
+
+                <div class="flex">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city">
+                </div>
+
+                <div class="flex">
+                    <label for="state">State</label>
+                    <select id="state" name="user_state">
+                <optgroup label="Nigeria">
+                    <option value="choose">Choose state</option>
+                    <option value="LOS">Lagos</option>
+                    <option value="ABJ">Abuja</option>
+                    <option value="AB">Abia</option>
+                    <option value="AN">Anambra</option>
+                    <option value="BA">Bauchi</option>
+                    <option value="EN">Enugu</option>
+                    <option value="IM">Imo</option>
+                    <option value="ON">Ondo</option>
+                    <option value="KA">Kano</option>
+                    <option value="KD">Kaduna</option>
+                    <option value="BY">Bayelsa</option>
+                    <option value="OG">Ogun</option>
+                    <option value="EB">Eboyi</option>
+                    <option value="KO">Kogi</option>
+                    <option value="RI">Rivers</option>
+                    <option value="ED">Edo</option>
+                    <option value="OS">Osun</option>
+                    <option value="KW">Kwara</option>
+                    <option value="DE">Delta</option>
+                    <option value="BO">Borno</option>
+                    <option value="YO">Yobe</option>
+                    <option value="NG">Niger</option>
+                    <option value="SO">Sokoto</option>
+                    <option value="KD">Kaduna</option>
+                    <option value="TR">Taraba</option>
+                    <option value="BE">Benue</option>
+                    <option value="AD">Adamawa</option>
+                    <option value="GO">Gombe</option>
+                </optgroup>
+                </select><br>
+                </div>
+
+                <div class="flex">
+                    <label for="zipcode">Zip Code</label>
+                    <input type="text" id="zipcode" name="user_zipcode" pattern="[0-9]*">
+                </div>
+            </fieldset>
+            <!-- User bio -->
+
+            <fieldset id="newsletter_info">
+
+                <legend id="newsletter">Newsletter</legend>
+
+                <label>Select the newsletter you would like to receive</label><br>
+                <input type="checkbox" id="html_news" value="html_newsletter" name="user_newsletter"><label for="html_news">HTML News</label><br>
+                <input type="checkbox" id="css_news" value="css_newsletter" name="user_newsletter"><label for="css_news">CSS News</label><br>
+                <input type="checkbox" id="java_news" value="javascript_newsletter" name="user_newsletter"><label for="java_news">Javascript News</label><br>
+
+                <label>Newsletter Format</label><br>
+                <input type="radio" id="html" value="html" name="newsletter_format"><label for="html">HTML</label><br>
+                <input type="radio" id="plain_text" value="text" name="newsletter_format"><label for="plain_text">Plain text</label><br>
+
+                <label for="topics">Other topics you'd like to hear about</label><br>
+                <textarea id="topics" name="user_topics" placeholder="Share your interests!"></textarea>
+            </fieldset>
+            <!-- newsletter_info-->
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- Form -->
+    <footer>
+        <p id="copyright">Copyright The Code Review</p>
+    </footer>
+</body>
+
 </html>
